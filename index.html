@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Anish Prajapati - Full Stack Developer portfolio. BCA graduate skilled in HTML, CSS and JavaScript.">
+  <meta name="keywords"
+    content="Anish Prajapati, Full Stack Developer, Portfolio, HTML, CSS, JavaScript, Web Developer India">
+  <meta name="author" content="Anish Prajapati">
+  <title>Anish Prajapati | Full Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo"><span class="logo-bracket">&lt;</span>❤️A.P.❤️<span
+          class="logo-bracket">/&gt;</span></a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="particles" id="particles"></div>
+    <canvas id="hero-3d-canvas" aria-label="Animated 3D globe" role="img"></canvas>
+    <div class="hero-content">
+      <div class="hero-badge">&#128075; Available for Opportunities</div>
+      <h1 class="hero-title">Hi, I'm <span class="gradient-text">Anish Prajapati</span></h1>
+      <div class="hero-subtitle"><span id="typed-text"></span><span class="cursor-blink">|</span></div>
+      <p class="hero-desc">A passionate <strong>Full Stack Developer</strong> who loves building beautiful, functional
+        web experiences with clean code and creative thinking.</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary" id="view-work-btn">View My Work</a>
+        <a href="#contact" class="btn btn-outline" id="contact-btn">Get In Touch</a>
+        <a href="resume.pdf" class="btn btn-ghost" id="resume-btn" download>&#8675; Download CV</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://github.com/anishprajapati2409" target="_blank" class="social-icon" id="github-hero"
+          aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/anish-prajapati-bca/" target="_blank" class="social-icon"
+          id="linkedin-hero" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+          </svg>
+        </a>
+        <a href="tel:+916266958592" class="social-icon" id="phone-hero" aria-label="Phone">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+          </svg>
+        </a>
+        <a href="https://twitter.com/anishpraja68590" target="_blank" class="social-icon" id="twitter-hero"
+          aria-label="Twitter">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+          </svg>
+        </a>
+        <a href="https://instagram.com/anishprajapati2409" target="_blank" class="social-icon" id="instagram-hero"
+          aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-dot"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">Get to know me</p>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-photo-wrap">
+          <div class="profile-img-wrap" id="profile-photo">
+            <canvas class="profile-code-rain" id="profile-code-rain" aria-hidden="true"></canvas>
+            <div class="profile-ring"></div>
+            <div class="profile-ring ring2"></div>
+            <div class="profile-image-card">
+              <img src="profile.jpg" alt="Anish Prajapati" class="profile-img profile-img-3d"
+                onerror="this.style.display='none'; this.parentElement.nextElementSibling.style.display='flex'">
+              <span class="profile-photo-glint" aria-hidden="true"></span>
+            </div>
+            <div class="avatar-fallback" style="display:none"><span class="avatar-initials">AP</span></div>
+          </div>
+          <div class="about-stats">
+            <div class="stat-card"><span class="stat-num">3+</span><span class="stat-label">Projects</span></div>
+            <div class="stat-card"><span class="stat-num">3+</span><span class="stat-label">Certifications</span></div>
+            <div class="stat-card"><span class="stat-num">1yr</span><span class="stat-label">Learning</span></div>
+          </div>
+        </div>
+        <div class="about-text">
+          <h3>BCA Student &amp; <span class="gradient-text">Full Stack Developer</span></h3>
+          <p>Hello! I'm <strong>Anish Prajapati</strong>, a passionate and motivated fresher based in <strong>Kanpur,
+              India</strong>. I have recently completed my <strong>Bachelor of Computer Applications (BCA)</strong> and
+            have been actively building real-world projects during my academic journey.</p>
+          <p>I love crafting clean, responsive, and user-friendly applications. My skill set includes <strong>C, C++,
+              Java, Python, HTML, CSS, JavaScript, SQL</strong> and data visualization using <strong>Power BI</strong>.
+            I'm always eager to learn new technologies and level up.</p>
+          <p>I believe great code and great design go hand-in-hand. I'm actively looking for exciting opportunities
+            where I can contribute, grow, and make an impact as a fresher developer.</p>
+          <div class="about-info-grid">
+            <div class="info-item"><span class="info-icon">&#127891;</span>
+              <div><span class="info-label">Education</span><span class="info-val">BCA Student (2024–2027)</span></div>
+            </div>
+            <div class="info-item"><span class="info-icon">&#128205;</span>
+              <div><span class="info-label">Location</span><span class="info-val">Kanpur, India</span></div>
+            </div>
+            <div class="info-item"><span class="info-icon">&#128188;</span>
+              <div><span class="info-label">Status</span><span class="info-val">Fresher – Open to Work</span></div>
+            </div>
+            <div class="info-item"><span class="info-icon">&#128231;</span>
+              <div><span class="info-label">Email</span><span class="info-val">anishprajapati037@gmail.com</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section skills-section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">What I work with</p>
+        <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3 class="skill-cat-title"><span class="cat-icon cat-icon-3d">&#128187;</span> Programming Languages</h3>
+          <div class="skill-bars">
+            <div class="skill-item">
+              <div class="skill-info"><span>C</span><span class="skill-pct">75%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" style="--w:75%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>C++</span><span class="skill-pct">70%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" style="--w:70%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Java</span><span class="skill-pct">50%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" style="--w:72%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Python</span><span class="skill-pct">70%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" style="--w:68%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 class="skill-cat-title"><span class="cat-icon cat-icon-3d">&#127760;</span> Web &amp; Database</h3>
+          <div class="skill-bars">
+            <div class="skill-item">
+              <div class="skill-info"><span>HTML5 &amp; CSS3</span><span class="skill-pct">88%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" style="--w:88%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>JavaScript</span><span class="skill-pct">75%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" style="--w:75%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>SQL</span><span class="skill-pct">70%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" style="--w:70%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Power BI</span><span class="skill-pct">65%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" style="--w:65%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tech-badges">
+        <span class="badge">C</span><span class="badge">C++</span><span class="badge">Java</span><span
+          class="badge">Python</span>
+        <span class="badge">HTML5</span><span class="badge">CSS3</span><span class="badge">JavaScript</span>
+        <span class="badge">SQL</span><span class="badge">Power BI</span><span class="badge">Git</span><span
+          class="badge">GitHub</span><span class="badge">VS Code</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section projects-section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">What I've built</p>
+        <h2 class="section-title">My <span class="gradient-text">Projects</span></h2>
+      </div>
+      <div class="projects-grid">
+        <article class="project-card" id="project-hms">
+          <div class="project-img project-img-2">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/anishprajapati2409" target="_blank" class="proj-link-btn"
+                  id="hms-github">&#128194; GitHub</a>
+                <a href="#" class="proj-link-btn proj-live" id="hms-live">&#128640; Live Demo</a>
+              </div>
+            </div>
+            <div class="project-icon-bg">&#127973;</div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags"><span class="ptag">HTML</span><span class="ptag">CSS</span><span
+                class="ptag">JavaScript</span><span class="ptag">SQL</span></div>
+            <h3 class="project-title">Hospital Management System</h3>
+            <p class="project-desc">A full-featured Hospital Management System web app for managing patient records,
+              appointments, doctor schedules, and billing information efficiently. Built as a major BCA project.</p>
+          </div>
+        </article>
+        <article class="project-card" id="project-campus">
+          <div class="project-img project-img-1">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/anishprajapati2409" target="_blank" class="proj-link-btn"
+                  id="campus-github">&#128194; GitHub</a>
+                <a href="#" class="proj-link-btn proj-live" id="campus-live">&#128640; Live Demo</a>
+              </div>
+            </div>
+            <div class="project-icon-bg">&#127979;</div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags"><span class="ptag">HTML</span><span class="ptag">CSS</span><span
+                class="ptag">JavaScript</span></div>
+            <h3 class="project-title">Collage Campuseampus campaign platform designed to promote college events,
+              activities and initiatives. Built with responsive design and smooth animations.</p>
+          </div>
+        </article>
+        <article class="project-card" id="project-portfolio">
+          <div class="project-img project-img-3">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/anishprajapati2409" target="_blank" class="proj-link-btn"
+                  id="portfolio-github">&#128194; GitHub</a>
+                <a href="#" class="proj-link-btn proj-live" id="portfolio-live">&#128640; Live Demo</a>
+              </div>
+            </div>
+            <div class="project-icon-bg">&#127760;</div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags"><span class="ptag">HTML</span><span class="ptag">CSS</span><span
+                class="ptag">JavaScript</span></div>
+            <h3 class="project-title">Portfolio Website</h3>
+            <p class="project-desc">A personal portfolio to showcase skills, projects, and experience. Built with pure
+              HTML, CSS and JavaScript with smooth animations and fully responsive design.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="section education-section" id="education">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">My academic journey</p>
+        <h2 class="section-title">Education</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="tl-header">
+              <div>
+                <h3 class="tl-title">Bachelor of Computer Applications (BCA)</h3>
+                <p class="tl-sub">&#127979; Kanpur University &mdash; Kanpur, India</p>
+              </div>
+              <span class="tl-year">2024 – 2027</span>
+            </div>
+            <p class="tl-desc">Currently pursuing a Bachelor of Computer Applications (BCA),
+              with a strong focus on programming fundamentals, web development, database management,
+              data analysis, and software engineering.
+              Developing practical skills through academic learning and hands-on projects,
+              including a Hospital Management System. Expected to graduate in 2027,
+              with a strong interest in software development and emerging technologies.
+              .</p>
+            <div class="tl-tags"><span class="ptag">C / C++</span><span class="ptag">Java</span><span
+                class="ptag">Python</span><span class="ptag">HTML/CSS</span><span class="ptag">JavaScript</span><span
+                class="ptag">SQL</span><span class="ptag">Power BI</span></div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="tl-header">
+              <div>
+                <h3 class="tl-title">12th – Higher Secondary</h3>
+                <p class="tl-sub">&#127979; Deoria Uttar Pradesh &mdash; S S V R T D I S JHARNA KUTTI GHANTI DEORIA</p>
+              </div>
+              <span class="tl-year">2021 – 2023</span>
+            </div>
+            <p class="tl-desc">Completed 12th grade with a strong foundation that fueled my interest in computers and
+              technology.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section experience-section" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">My work history</p>
+        <h2 class="section-title">Experience</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot exp-dot"></div>
+          <div class="timeline-card">
+            <div class="tl-header">
+              <div>
+                <h3 class="tl-title">Fresher – Full Stack Developer</h3>
+                <p class="tl-sub">&#128187; Self-Employed / Open to Work</p>
+              </div>
+              <span class="tl-year exp-tag">2026 – Present</span>
+            </div>
+            <p class="tl-desc">Building personal and academic projects to strengthen portfolio. Actively seeking junior
+              developer roles and internship opportunities.</p>
+            <ul class="exp-list">
+              <li>Built a Portfolio Website using HTML, CSS and JavaScript</li>
+              <li>Developed a Hospital Management System (HMS) as a major project</li>
+              <li>Practiced Git and GitHub for version control</li>
+              <li>Exploring responsive and accessible web design best practices</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="exp-note">&#128161; I'm a fresher eager to learn and contribute. If you have an opportunity, let's
+        connect!</div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section class="section certifications-section" id="certifications">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">My achievements</p>
+        <h2 class="section-title">Certifications</h2>
+      </div>
+      <div class="certs-grid">
+        <div class="cert-card" id="cert-powerbi">
+          <div class="cert-icon cert-icon-3d">&#128202;</div>
+          <div class="cert-body">
+            <h4 class="cert-title">Power BI Certificate</h4>
+            <p class="cert-issuer">Microsoft / Power BI</p>
+            <p class="cert-year">2026</p>
+          </div>
+          <span class="cert-badge">Certified</span>
+        </div>
+        <div class="cert-card" id="cert-bca">
+          <div class="cert-icon cert-icon-3d">&#127891;</div>
+          <div class="cert-body">
+            <h4 class="cert-title">Bachelor of Computer Applications (BCA)</h4>
+            <p class="cert-issuer">Kanpur University</p>
+            <p class="cert-year">2026</p>
+          </div>
+          <span class="cert-badge">Completed</span>
+        </div>
+        <div class="cert-card" id="cert-web">
+          <div class="cert-icon cert-icon-3d">&#127760;</div>
+          <div class="cert-body">
+            <h4 class="cert-title">Web Development Fundamentals</h4>
+            <p class="cert-issuer">Self-Learning / Projects</p>
+            <p class="cert-year">2026</p>
+          </div>
+          <span class="cert-badge">Verified</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">Let's work together</p>
+        <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Let's build something <span class="gradient-text">amazing</span> together!</h3>
+          <p>I'm open to freelance work, internships, and full-time junior developer positions. Feel free to reach out!
+          </p>
+          <div class="contact-links">
+            <a href="mailto:anishprajapati037@gmail.com" class="contact-link-item" id="contact-email">
+              <div class="contact-link-icon contact-icon-3d">&#128231;</div>
+              <div><span class="cl-label">Email</span><span class="cl-val">anishprajapati037@gmail.com</span></div>
+            </a>
+            <a href="tel:+916266958592" class="contact-link-item" id="contact-phone">
+              <div class="contact-link-icon contact-icon-3d">&#128222;</div>
+              <div><span class="cl-label">Phone</span><span class="cl-val">+91 6266958592</span></div>
+            </a>
+            <a href="https://github.com/anishprajapati2409" target="_blank" class="contact-link-item"
+              id="contact-github">
+              <div class="contact-link-icon contact-icon-3d">&#128187;</div>
+              <div><span class="cl-label">GitHub</span><span class="cl-val">github.com/anishprajapati2409</span></div>
+            </a>
+            <a href="https://www.linkedin.com/in/anish-prajapati-bca/" target="_blank" class="contact-link-item"
+              id="contact-linkedin">
+              <div class="contact-link-icon contact-icon-3d">&#128279;</div>
+              <div><span class="cl-label">LinkedIn</span><span class="cl-val">linkedin.com/in/anish-prajapati-bca</span>
+              </div>
+            </a>
+            <a href="https://maps.google.com/?q=Kanpur,India" target="_blank" class="contact-link-item"
+              id="contact-location">
+              <div class="contact-link-icon contact-icon-3d">&#128205;</div>
+              <div><span class="cl-label">Location</span><span class="cl-val">Kanpur, Uttar Pradesh, India</span></div>
+            </a>
+          </div>
+        </div>
+        <form class="contact-form" id="contact-form" novalidate>
+          <h3>Send me a <span class="gradient-text">message</span></h3>
+          <div class="form-group"><label for="name-input">Your Name</label><input type="text" id="name-input"
+              name="name" placeholder="John Doe" required></div>
+          <div class="form-group"><label for="email-input">Your Email</label><input type="email" id="email-input"
+              name="email" placeholder="john@example.com" required></div>
+          <div class="form-group"><label for="subject-input">Subject</label><input type="text" id="subject-input"
+              name="subject" placeholder="Project Inquiry"></div>
+          <div class="form-group"><label for="message-input">Message</label><textarea id="message-input" name="message"
+              rows="5" placeholder="Tell me about your project..." required></textarea></div>
+          <button type="submit" class="btn btn-primary btn-full" id="send-msg-btn">Send Message &#128640;</button>
+          <div class="form-success" id="form-success" style="display:none">&#9989; Message sent! I'll get back to you
+            soon.</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <a href="#hero" class="nav-logo footer-logo"><span class="logo-bracket">&lt;</span>AP<span
+            class="logo-bracket">/&gt;</span></a>
+        <p class="footer-text">Designed &amp; Built by <strong>Anish Prajapati</strong> &copy; 2026</p>
+        <div class="footer-socials">
+          <a href="https://github.com/anishprajapati2409" target="_blank" id="footer-github" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+              <path
+                d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/anish-prajapati-bca/" target="_blank" id="footer-linkedin"
+            aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+            </svg>
+          </a>
+          <a href="mailto:anishprajapati037@gmail.com" id="footer-email" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+              <path
+                d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
+  <script src="3d-animations.js"></script>
+</body>
+
+</html>

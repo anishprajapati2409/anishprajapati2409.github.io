@@ -316,6 +316,7 @@ body {
   background: linear-gradient(var(--bg-card), var(--bg-card)) padding-box,
               var(--gradient) border-box;
   box-shadow: 0 0 40px rgba(108,99,255,0.4), 0 0 80px rgba(168,85,247,0.2);
+  filter: brightness(0.9) contrast(1.04) saturate(0.9);
   transition: var(--transition);
   position: relative; z-index: 2;
 }
